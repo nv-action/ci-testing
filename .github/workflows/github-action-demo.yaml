@@ -10,7 +10,7 @@ on:
       - '.github/workflows/github-action-demo.yaml'
 jobs:
   Explore-GitHub-Actions:
-    runs-on: test-ci
+    runs-on: [self-hosted, linux, x64, lable-1]
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
